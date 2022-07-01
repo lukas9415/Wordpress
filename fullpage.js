@@ -937,7 +937,7 @@
                     link = options.anchors[i];
                 }
 
-                li += '<li><a href="#' + link + '"><span class="fp-sr-only">' + getBulletLinkName(i, 'Section') + '</span><span></span></a>';
+                li += '<li><a href="#Test' + i + link + '"><span class="fp-sr-only">' + getBulletLinkName(i, 'Section') + '</span><span></span></a>';
 
                 // Only add tooltip if needed (defined by user)
                 var tooltip = options.navigationTooltips[i];
@@ -2509,7 +2509,7 @@
             if(options.navigation && $(SECTION_NAV_SEL)[0] != null){
                     removeClass($(ACTIVE_SEL, $(SECTION_NAV_SEL)[0]), ACTIVE);
                 if(name){
-                    addClass( $('a[href="#' + name + '"]', $(SECTION_NAV_SEL)[0]), ACTIVE);
+                    addClass( $('a[href="#Test' + name + '"]', $(SECTION_NAV_SEL)[0]), ACTIVE);
                 }else{
                     addClass($('a', $('li', $(SECTION_NAV_SEL)[0])[sectionIndex]), ACTIVE);
                 }
